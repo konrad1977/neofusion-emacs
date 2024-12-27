@@ -62,7 +62,6 @@
   (boatYellow1		"#938056" "#717C7C")
   (boatYellow2		"#C0A36E" "#717C7C")
   (carpYellow		"#E6C384" "#717C7C")
-  (faded_orange		"#FFA066" "#717C7C")
   )
 
  ;; Customize faces
@@ -252,8 +251,8 @@
   (rainbow-delimiters-depth-9-face               (:foreground light1))
 
   ;; show-paren
-  (show-paren-match                              (:background dark_aqua :foreground dark1 :bold t))
-  (show-paren-match-expression	                 (:background dark_aqua :foreground dark1 :bold t))
+  (show-paren-match                              (:background light1 :foreground dark1 :bold t))
+  (show-paren-match-expression	                 (:background light1 :foreground dark1 :bold t))
   (show-paren-mismatch                           (:background dark_red :foreground light_aqua))
 
   (tooltip                                       (:foreground dark0 :background carpYellow))
