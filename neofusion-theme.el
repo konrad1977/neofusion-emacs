@@ -346,7 +346,7 @@
 
   ;; evil
   (evil-ex-lazy-highlight                        (:foreground neutral_aqua :background faded_blue :bold t))
-  evil-ex-search                                (:inherit 'evil-ex-lazy-highlight))
+  (evil-ex-search                                (:inherit 'evil-ex-lazy-highlight))
   (evil-ex-substitute-matches                    (:foreground dark_red :background light_red :strike-through t))
   (evil-ex-substitute-replacement                (:foreground dark_aqua :background neutral_aqua :bold))
   (evil-search-highlight-persist-highlight-face  (:background carpYellow))
