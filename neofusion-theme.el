@@ -73,7 +73,7 @@
   (error                                         (:foreground dark_red))
   (glyph-face                                    (:background faded_purple :foreground dark_red))
   (glyphless-char                                (:background faded_purple :foreground dark_red))
-  (header-line                                   (:background neutral_aqua))
+  (header-line                                   (:background neutral_blue :foreground bright_blue :bold t))
   (highlight                                     (:background gray :foreground bright_green))
   (hl-line                                       (:background dark2))
   (fringe                                        (:inherit 'default))
@@ -235,9 +235,9 @@
   (xref-match                                    (:foreground carpYellow))
 
   ;; rainbow delimiters
-  (rainbow-delimiters-mismatched-face            (:foreground dark_red))
-  (rainbow-delimiters-unmatched-face             (:foreground dark_aqua))
-  (rainbow-delimiters-base-error-face            (:foreground neutral_red))
+  (rainbow-delimiters-mismatched-face            (:foreground dark_red :background dark_red))
+  (rainbow-delimiters-unmatched-face             (:foreground dark_aqua :background dark_red))
+  (rainbow-delimiters-base-error-face            (:foreground neutral_red :background dark_red))
   (rainbow-delimiters-base-face                  (:foreground neutral_green))
 
   (rainbow-delimiters-depth-1-face               (:foreground light_red))
@@ -253,7 +253,7 @@
   ;; show-paren
   (show-paren-match                              (:background light1 :foreground dark1 :bold t))
   (show-paren-match-expression	                 (:background light1 :foreground dark1 :bold t))
-  (show-paren-mismatch                           (:background dark_red :foreground light_aqua))
+  (show-paren-mismatch                           (:background bright_red))
 
   (tooltip                                       (:foreground dark0 :background carpYellow))
   ;; company-box
@@ -275,9 +275,9 @@
 
   (consult-file (:foreground light1))
 
-  (flycheck-inline-error                         (:foreground dark_red :background neutral_red :height 150 :italic t))
-  (flycheck-inline-info                          (:foreground bright_blue :background light0 :height 150 :italic t))
-  (flycheck-inline-warning                       (:foreground carpYellow :background neutral_yellow :height 150 :italic t))
+  (flycheck-inline-error                         (:foreground light_red :background dark_red :height 150 :italic t))
+  (flycheck-inline-info                          (:foreground neutral_aqua :background faded_blue :height 150 :italic t))
+  (flycheck-inline-warning                       (:foreground light1 :background gray :height 150 :italic t))
 
   ;; indent dots
   (highlight-indent-guides-character-face        (:foreground dark4))
@@ -345,9 +345,10 @@
   (dashboard-no-items-face                       (:foreground light4))
 
   ;; evil
-  (evil-ex-lazy-highlight                        (:foreground neutral_red :background faded_purple :bold t))
-  (evil-ex-substitute-matches                    (:foreground neutral_red :background dark_red :strike-through t))
-  (evil-ex-substitute-replacement                (:foreground neutral_aqua :background bright_blue :bold))
+  (evil-ex-lazy-highlight                        (:foreground neutral_aqua :background faded_blue :bold t))
+  evil-ex-search                                (:inherit 'evil-ex-lazy-highlight))
+  (evil-ex-substitute-matches                    (:foreground dark_red :background light_red :strike-through t))
+  (evil-ex-substitute-replacement                (:foreground dark_aqua :background neutral_aqua :bold))
   (evil-search-highlight-persist-highlight-face  (:background carpYellow))
 
   ;; term
@@ -405,8 +406,8 @@
   (orderless-match-face-2                        (:foreground neutral_blue :weight 'bold))
   (orderless-match-face-3                        (:foreground neutral_purple :weight 'bold))
 
-  (comint-highlight-prompt                       (:foreground bright_blue :background neutral_aqua :italic t))
-  (comint-highlight-input                        (:foreground dark_red :weight 'semi-bold))
+  (comint-highlight-prompt                       (:foreground bright_blue :background dark_aqua :italic t))
+  (comint-highlight-input                        (:foreground bright_blue :weight 'semi-bold))
 
   (dape-stack-trace (:background neutral_red))
 
